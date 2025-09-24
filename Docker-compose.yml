@@ -14,7 +14,7 @@ services:
       - mongo_data:/data/db
 
   backend:
-    build: ./backend # path where your backend Dockerfile is located
+    build: . # path where your backend Dockerfile is located
     container_name: backend_container
     restart: always
     env_file:
